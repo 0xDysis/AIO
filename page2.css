@@ -1,9 +1,10 @@
 body, html {
+    font-family: 'Times New Roman', serif;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to right, #0e0c0c, #0a0a21);
   }
   
   body {
@@ -17,7 +18,7 @@ body, html {
     height: 100%;
     top: 0;
     left: 0;
-    color: #f0f0f0;
+    color: #ff0202;
   }
   
   h1 {
@@ -38,7 +39,7 @@ body, html {
   
   a {
     text-decoration: none;
-    color: #000;
+    color: #ff0000;
   }
   
   a:hover {
