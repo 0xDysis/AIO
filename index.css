@@ -5,26 +5,28 @@ body, html {
   padding: 0;
   background-color: #000000; /* fallback color if gradients are not supported */
   background-image: linear-gradient(to bottom, #000000, #232323); /* black gradient background */
+  background-attachment: fixed; /* make the background fixed in the viewport */
+  overflow-y: auto; /* enable vertical scrolling when necessary */
 }
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* align content at the top */
+  align-items: center; /* center content horizontally */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .content {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #ff0000;
-  z-index: 2;
+  
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ff0000;
+    z-index: 2;
 }
-
 
 .center-image {
   position: absolute;
