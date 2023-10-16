@@ -4,7 +4,7 @@ let textArray = [
   "assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, assimilate into oblivion, "
 ];
 let currentTextIndex = 0;
-let speed = 25;
+let speed = 0.1;
 
 function typeText() {
   let text = textArray[currentTextIndex];

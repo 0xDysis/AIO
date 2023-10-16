@@ -1,26 +1,41 @@
 body, html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('TPMXX.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  
-  .content {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    color: #fffb00;
-  
-  }
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* fallback color if gradients are not supported */
+  background-image: linear-gradient(to bottom, #000000, #232323); /* black gradient background */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #ff0000;
+  z-index: 2;
+}
+
+
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px; 
+  height: 300px; 
+  transform: translate(-50%, -50%); 
+  background-image: url('XXXX.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}

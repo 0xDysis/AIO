@@ -1,26 +1,42 @@
 body {
-    font-family: 'Times New Roman', serif;
-    line-height: 1.6;
-    color: #ff0000;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    background-image: linear-gradient(to right, #000000, #0b0523);
-  }
-  
-  header {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  main {
-    padding: 10px;
-  }
+  font-family: 'Times New Roman', serif;
+  line-height: 1.6;
+  color: #ff0000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  background-image: linear-gradient(to right, #000000, #1a1822);
+}
+
+header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  align-items: center; /* center elements horizontally */
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff0000;
+  animation: pulsate 6s infinite;
+}
+
+main {
+  padding: 10px;
+}
+
+.logo {
+  width: 60px; /* adjustable width */
+  height: 60px; /* adjustable height */
+  display: block;
+  margin-bottom: 20px; /* add space between the image and the h1 element */
+}
+
+@keyframes pulsate {
+  0% { color: #ff0000; text-shadow: none; }
+  50% { color: #000000; text-shadow: 0 0 10px #990000, 0 0 20px #990000, 0 0 30px #990000, 0 0 40px #990000; }
+  100% { color: #ff0000; text-shadow: none; }
+}
