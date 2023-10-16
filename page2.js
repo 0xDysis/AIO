@@ -1,6 +1,6 @@
 const articles = [
     { title: "Assimilation", url: "1.html" },
-    { title: "heartbeat", url: "2.html" },
+    { title: "Heartbeat", url: "2.html" },
     // Add more articles here
   ];
   
