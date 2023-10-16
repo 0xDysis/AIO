@@ -1,5 +1,5 @@
 const articles = [
-    { title: "Assimilation", url: "1.html" },
+    { title: "Assimilation 7213", url: "1.html" },
     { title: "Heartbeat", url: "2.html" },
     // Add more articles here
   ];
