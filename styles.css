@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'Times New Roman', serif;
   line-height: 1.6;
@@ -33,6 +35,12 @@ main {
   height: 60px; /* adjustable height */
   display: block;
   margin-bottom: 20px; /* add space between the image and the h1 element */
+}
+
+#text {
+  --active: 0;
+  transition: transform 1s;
+  transform: scale(calc(var(--active) + 1));
 }
 
 @keyframes pulsate {
