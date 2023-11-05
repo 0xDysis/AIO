@@ -3,29 +3,39 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000000; /* fallback color if gradients are not supported */
-  background-image: linear-gradient(to bottom, #000000, #232323); /* black gradient background */
-  background-attachment: fixed; /* make the background fixed in the viewport */
-  overflow-y: auto; /* enable vertical scrolling when necessary */
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, #000000, #232323);
+  background-attachment: fixed;
+  overflow-y: auto;
 }
 
 body {
   display: flex;
-  justify-content: flex-start; /* align content at the top */
-  align-items: center; /* center content horizontally */
+  justify-content: center; /* center content horizontally */
+  align-items: center; /* center content vertically */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.content {
+#fluid_container {
+  position: absolute; /* make the container take the full viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    color: #ff0000;
-    z-index: 2;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.content {
+  position: relative; /* make the content relative to the container */
+  width: 100%;
+  height: 100%;
+  color: #ff0000;
+  z-index: 2;
 }
 
 .center-image {
@@ -35,7 +45,7 @@ body {
   width: 300px; 
   height: 300px; 
   transform: translate(-50%, -50%); 
-  background-image: url('XXXXbackground.png');
+  background-image: url('XXX.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

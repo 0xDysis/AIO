@@ -4,16 +4,23 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to right, #000000, #242323);
+  
+  position: relative; /* Add this line */
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#fluid_container {
+  position: absolute; /* make the container take the full viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: -1; /* This will place the container behind all other elements */
 }
 
 .content {
+  position: relative; /* Add this line */
   width: 100%;
   height: 100%;
   top: 0;
@@ -22,8 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1; /* This will place the content above the container */
 }
-
 .logo {
   width: 70px; /* adjustable width */
   height: 70px; /* adjustable height */
