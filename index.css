@@ -3,19 +3,13 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000000;
-  background-image: linear-gradient(to bottom, #000000, #232323);
-  background-attachment: fixed;
-  overflow-y: auto;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 body {
   display: flex;
   justify-content: center; /* center content horizontally */
   align-items: center; /* center content vertically */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 #fluid_container {
@@ -25,17 +19,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  
   box-sizing: border-box;
   z-index: 0;
-}
-
-.content {
-  position: relative; /* make the content relative to the container */
-  width: 100%;
-  height: 100%;
-  color: #ff0000;
-  z-index: 2;
 }
 
 .center-image {
@@ -45,9 +30,12 @@ body {
   width: 300px; 
   height: 300px; 
   transform: translate(-50%, -50%); 
-  background-image: url('XXX.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   z-index: 1;
 }
+
+.center-image a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

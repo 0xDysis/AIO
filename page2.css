@@ -1,11 +1,11 @@
 body, html {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Helvetica', sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  
-  position: relative; /* Add this line */
+  overflow: hidden; /* Add this line */
+  position: relative;
 }
 
 #fluid_container {
@@ -25,7 +25,8 @@ body, html {
   height: 100%;
   top: 0;
   left: 0;
-  color: #ff0202;
+  color: #ffffff00;
+  text-shadow: 0px 0px 2px #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +51,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #ff0000;
+  color: #ff000000;
 }
 
 a:hover {

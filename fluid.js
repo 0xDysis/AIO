@@ -540,3 +540,8 @@ particle = function( x, y ){
 
 	this.speed = 0; // speed
 }
+var debounceTimeout;
+window.addEventListener('resize', function() {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(fluid.initVectorField.bind(fluid), 100);
+});
