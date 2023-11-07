@@ -7,18 +7,45 @@
   <link rel="icon" href="XXXXbackground.png" type="image/png">
   <link rel="stylesheet" href="page2.css">
 </head>
-<body onload="fluid.init()">
-
-
+<body onload="fluid.init();">
 
   <div id="fluid_container"></div>
   <div class="content">
     <a href="index.html">
-      <img src="XXX.png" alt="Logo" class="logo">
+      <div class="logo-container">
+        <img src="XXX.png" alt="Logo" class="logo">
+        <div id="day-counter"></div>
+      </div>
     </a>
     <ul id="articles-list"></ul>
   </div>
+  
   <script src="page2.js"></script>
   <script src="fluid.js"></script>
+  <script>
+    function calculateTime() {
+      var startDate = new Date("2004-01-16");
+      var today = new Date();
+      var timeDifference = today - startDate;
+  
+      var seconds = Math.floor(timeDifference / 1000);
+      var minutes = Math.floor(seconds / 60);
+      var hours = Math.floor(minutes / 60);
+      var days = Math.floor(hours / 24);
+  
+      hours %= 24;
+      minutes %= 60;
+      seconds %= 60;
+  
+      document.getElementById("day-counter").innerHTML = days + " - " + hours + " - " + minutes + " - " + seconds;
+    }
+  
+    setInterval(calculateTime, 1000);
+  </script>
+  
+  
+  
+  
 </body>
 </html>
+
